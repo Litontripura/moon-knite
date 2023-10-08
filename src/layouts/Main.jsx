@@ -1,12 +1,15 @@
 import React from 'react';
 import Navbar from '../Components/navbar/Navbar';
 import { Outlet } from 'react-router-dom';
+import Container from '../Components/Container';
 
 const Main = () => {
     return (
         <div>
            <Navbar></Navbar>
-           <Outlet></Outlet>
+           <Container>
+            <Outlet></Outlet>
+           </Container>
         </div>
     );
 };
